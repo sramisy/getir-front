@@ -1,0 +1,36 @@
+.basket-content {
+  @apply p-6 pt-1;
+}
+
+.basket-summary .basket-content {
+  @apply bg-white absolute right-0 top-11 border-0 rounded-lg rounded-tr-none pt-1 pb-6 px-6 z-10;
+  width: 430px;
+}
+
+.basket-item {
+  @apply flex items-start justify-between py-4 border-b border-input-border;
+}
+
+.basket-summary .item-title {
+  @apply text-sm text-gray-storm;
+  max-width: initial;
+}
+
+.basket-content ul {
+  @apply overflow-y-auto overflow-x-hidden;
+  max-height: 280px;
+}
+
+/* .basket-content ul::-webkit-scrollbar {
+  width: 0;
+} */
+
+.item-title {
+  @apply text-sm text-gray-storm truncate;
+  max-width: 120px;
+}
+
+.item-price {
+  @apply text-primary font-semibold;
+  font-size: 15px;
+}

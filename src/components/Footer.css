@@ -1,0 +1,11 @@
+.footer {
+    @apply bg-white px-4 md:px-6 xl:px-0 pt-12 pb-4 md:pt-10 xl:pt-12 md:pb-6 xl:pb-8;
+  }
+  
+  .footer h3 {
+    @apply text-primary text-lg;
+  }
+  
+  .footer .mobile-stores {
+    @apply flex flex-col gap-y-2 mt-5 md:mt-4;
+  }

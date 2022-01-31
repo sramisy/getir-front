@@ -1,0 +1,20 @@
+.category {
+  @apply text-center rounded-md py-2 px-0.5;
+}
+
+.category:hover {
+  @apply bg-primary-light cursor-pointer;
+}
+
+.category > div {
+  @apply mb-3;
+}
+
+.category img {
+  @apply w-12 mx-auto rounded-lg border border-input-border;
+}
+
+.category p {
+  @apply text-gray-dark;
+  font-size: 15px;
+}

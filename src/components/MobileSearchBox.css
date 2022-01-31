@@ -1,0 +1,17 @@
+.popular-searches,
+.search-results {
+  position: fixed;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background-color: var(--color-white);
+  border: none;
+  z-index: 40;
+}
+
+.popular-searches ul button {
+  @apply py-2 border-0 rounded bg-primary-light text-primary;
+  font-size: 13px;
+  padding-left: 10px;
+  padding-right: 10px;
+}

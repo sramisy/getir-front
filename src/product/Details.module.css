@@ -1,0 +1,7 @@
+.add-to-favorites {
+  @apply flex items-center;
+}
+
+.add-to-favorites p {
+  @apply text-sm text-gray-storm font-semibold;
+}

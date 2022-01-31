@@ -1,0 +1,100 @@
+/* Navbar */
+
+.navbar {
+  @apply px-3 md:px-4 lg:px-16 xl:px-0;
+  background-color: #4c3398;
+}
+
+.nav-apps {
+  @apply flex;
+}
+
+.nav-item {
+  @apply p-2 md:px-3 xl:px-5;
+}
+
+.nav-apps .nav-item {
+  @apply mr-px md:p-3 xl:px-6 rounded-t-lg;
+  @apply hover:bg-primary;
+  margin-top: 2px;
+}
+
+.nav-apps .nav-item.active {
+  background-color: var(--color-primary);
+}
+
+.nav-actions .nav-item:last-child {
+  @apply pr-0;
+}
+
+.nav-apps img {
+  height: 14px;
+}
+
+.nav-link {
+  @apply flex items-center text-primary-light text-sm font-medium;
+}
+
+.nav-item figure {
+  filter: brightness(5%) invert(90%) sepia(72%) saturate(3333%)
+    hue-rotate(180deg) contrast(102%);
+}
+
+.nav-item.active figure {
+  filter: none;
+}
+
+.nav-actions {
+  display: none;
+}
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown-menu {
+  position: absolute;
+  @apply border-0 rounded-lg top-10 right-0 z-30;
+  min-width: 260px;
+  box-shadow: var(--shadow-s) var(--shadow-color-primary);
+}
+
+.dropdown-item {
+  @apply py-2 px-4;
+}
+
+.dropdown-item:hover {
+  @apply bg-primary-light;
+}
+
+.dropdown-item a {
+  @apply text-sm text-black;
+}
+
+.dropdown-item:hover a {
+  @apply text-primary;
+}
+
+.caret {
+  @apply text-base text-primary-light ml-2;
+  transition: transform 0.3s ease-in-out;
+}
+
+.caret.up {
+  @apply transform rotate-180;
+}
+
+@media screen and (min-width: 768px) {
+  .nav-apps .nav-item {
+    margin-top: 5px;
+  }
+
+  .nav-apps img {
+    height: 1rem;
+  }
+
+  .nav-actions {
+    display: flex;
+    align-items: center;
+  }
+}

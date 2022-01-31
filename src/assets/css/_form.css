@@ -1,0 +1,170 @@
+/* Forms */
+
+.custom-select {
+  position: relative;
+  width: 100%;
+}
+
+.radio-control {
+  width: 1.25rem;
+  height: 1.25rem;
+}
+
+.radio-control {
+  accent-color: var(--color-primary);
+}
+
+.radio-control:checked + label {
+  color: var(--color-primary);
+}
+
+.custom-select select {
+  appearance: none;
+  width: 100%;
+}
+
+.country-list .country-name {
+  display: none;
+}
+
+.country-list .dial-code {
+  font-size: var(--font-size-m);
+}
+
+.country-code {
+  @apply absolute left-11 text-gray-storm z-10 cursor-pointer pointer-events-none;
+  top: 18px;
+  font-size: 15px;
+}
+
+.react-tel-input .country-list {
+  width: 109px;
+}
+
+.react-tel-input .flag-dropdown {
+  @apply static bg-white border-2 border-input-border rounded-md;
+  height: 56px;
+}
+
+.react-tel-input .selected-flag {
+  width: 100%;
+  padding-left: 14px;
+  padding-right: 14px;
+  border-radius: 0.375rem;
+  transition: border-color 0.4s ease 0s;
+}
+
+.react-tel-input .flag-dropdown.open {
+  border: 2px solid var(--color-primary);
+  border-radius: 0.375rem;
+}
+
+.react-tel-input .flag-dropdown.open .selected-flag {
+  border-radius: 0.375rem;
+}
+
+.react-tel-input .form-control {
+  display: none;
+  height: 54px;
+  border: 0;
+}
+
+.react-tel-input .selected-flag .arrow {
+  content: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAiIGhlaWdodD0iNiIgdmlld0JveD0iMCAwIDEwIDYiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxwYXRoIGQ9Ik05IDFMNSA1TDEgMSIgc3Ryb2tlPSIjNUQzRUJDIiBzdHJva2Utd2lkdGg9IjIiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPgo8L3N2Zz4K);
+  top: 50%;
+  left: 70px;
+  margin: 0px;
+  width: 10px;
+  height: 10px;
+  border: 0px;
+  transform: translate(0px, -50%);
+  transition: transform 0.4s ease 0s;
+}
+
+.react-tel-input .selected-flag .arrow.up {
+  transform: translate(0px, -50%) rotate(180deg);
+  border-bottom: none;
+}
+
+.error-message {
+  font-size: 13px;
+  @apply text-danger mt-2;
+}
+
+.input-group {
+  position: relative;
+  width: 100%;
+}
+
+.input-group.has-floating-label .input-control::placeholder {
+  color: transparent;
+}
+
+.input-group.has-floating-label .label-control {
+  position: absolute;
+  top: 1rem;
+  left: 0.75rem;
+  color: var(--color-gray-storm);
+  font-weight: var(--font-weight-normal);
+  font-size: var(--font-size-m);
+  transition: all 0.2s;
+  pointer-events: none;
+}
+
+.input-control {
+  @apply w-full bg-white border-2 border-input-border rounded-md px-3 py-4 placeholder-gray-storm text-sm focus:outline-none;
+  transition: border 0.2s ease 0s;
+}
+
+.input-control.error {
+  @apply border-danger !important;
+}
+
+.error-icon {
+  @apply text-xl text-danger absolute right-3;
+  top: 18px;
+}
+
+.input-control[type='tel']:hover {
+  border: 2px solid var(--color-primary);
+}
+
+.input-control:focus {
+  border: 2px solid var(--color-primary);
+}
+
+.input-control[disabled]:focus {
+  border-color: var(--color-input-border);
+}
+
+.input-control:focus ~ .label-control,
+.input-control:not(:placeholder-shown) ~ .label-control {
+  transform: translate(0, -0.75rem);
+  color: var(--color-primary);
+  font-size: var(--font-size-s);
+}
+
+.label-control {
+  color: var(--color-gray-storm);
+  font-size: var(--font-size-m);
+  font-weight: var(--font-weight-semi-bold);
+}
+
+.label-control span {
+  font-size: var(--font-size-m);
+}
+
+.label-control a {
+  color: var(--color-primary);
+  font-size: var(--font-size-m);
+  font-weight: var(--font-weight-semi-bold);
+}
+
+.input-control::placeholder {
+  font-size: var(--font-size-m);
+  color: var(--color-gray-mid);
+}
+
+.react-dropdown-select {
+  @apply border border-input-border rounded-md;
+}

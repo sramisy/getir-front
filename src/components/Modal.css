@@ -1,0 +1,110 @@
+/* Modal */
+
+.modal {
+  @apply fixed overflow-y-auto top-0 left-0 w-full h-screen z-50;
+  background-color: rgba(24, 17, 45, 0.72);
+}
+
+.modal::-webkit-scrollbar {
+  display: none;
+}
+
+.modal-dialog {
+  @apply flex flex-col h-full overflow-y-auto;
+}
+
+.dialog-centered {
+  @apply justify-center;
+}
+
+.modal-content {
+  @apply flex flex-col bg-white border-0 md:rounded-xl h-full;
+}
+
+.modal-header {
+  @apply flex items-center justify-between;
+}
+
+.modal-header h3 {
+  @apply font-semibold text-sm text-primary;
+}
+
+.modal-body {
+  @apply bg-white overflow-y-auto;
+}
+
+.modal.address-confirm .modal-content {
+  width: 343px !important;
+}
+
+.modal.outside-modal .modal-dialog {
+  @apply items-center;
+  padding: 0 1rem;
+}
+
+.modal.outside-modal .modal-content {
+  height: auto;
+  border-radius: 0.75rem;
+  max-width: 446px;
+}
+
+.modal.add-promo-code-modal .modal-dialog {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  align-items: center;
+}
+
+.modal.add-promo-code-modal .modal-content {
+  height: auto;
+  border-radius: 0.75rem;
+  max-width: 446px;
+  width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .modal-dialog {
+    align-items: center;
+    padding: 1.5rem;
+  }
+
+  .modal-content {
+    width: 446px;
+  }
+
+  .addresses .modal-content {
+    height: min-content;
+  }
+
+  .modal.add-delivery-address .modal-content {
+    width: 680px;
+    height: min-content;
+  }
+
+  .modal.promos-modal .modal-content,
+  .modal.promo-details-modal .modal-content {
+    min-width: 610px;
+  }
+
+  .modal.login-modal .modal-content,
+  .modal.languages-modal .modal-content,
+  .modal.otp-modal .modal-content,
+  .modal.activation-modal .modal-content,
+  .modal.edit-profile-info-modal .modal-content,
+  .modal.add-invoice-modal .modal-content,
+  .modal.add-card-modal .modal-content,
+  .modal.invoices-modal .modal-content {
+    height: min-content;
+  }
+
+  .modal.add-delivery-address .modal-dialog {
+    padding: 0.375rem 1.5rem;
+  }
+
+  .modal.product-details .modal-dialog {
+    justify-content: center;
+  }
+
+  .modal.product-details .modal-content {
+    width: 540px;
+  }
+}

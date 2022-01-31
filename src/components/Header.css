@@ -1,0 +1,38 @@
+/* Header */
+
+.header {
+  background-color: var(--color-primary);
+}
+
+.header-wrapper {
+  @apply flex justify-between items-center py-5 md:py-4 px-3 md:px-8;
+}
+
+.logo {
+  height: 22px;
+}
+
+.mobile-menu {
+  @apply top-0 left-0 w-full h-full z-30;
+  background-color: rgba(24, 17, 45, 0.72);
+}
+
+.mobile-menu > div {
+  max-width: 375px;
+}
+
+@media screen and (min-width: 768px) {
+  .logo {
+    height: 1.5rem;
+  }
+}
+
+@media screen and (min-width: 1368px) {
+  .header-wrapper {
+    @apply px-0;
+  }
+
+  .logo {
+    height: 26px;
+  }
+}

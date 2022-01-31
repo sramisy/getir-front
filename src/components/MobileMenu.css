@@ -1,0 +1,15 @@
+.mobile-menu {
+  @apply fixed overflow-y-auto z-50 md:hidden;
+}
+
+.mobile-menu > div {
+  @apply flex flex-col bg-white h-full;
+}
+
+.mobile-menu .menu-item.active path {
+  fill: var(--color-primary);
+}
+
+.mobile-menu .menu-item a {
+  @apply flex py-3 px-6;
+}

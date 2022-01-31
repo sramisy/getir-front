@@ -1,0 +1,16 @@
+.checkbox input {
+  appearance: none;
+  width: 1.25rem;
+  height: 1.25rem;
+  border: 2px solid var(--color-input-border);
+  border-radius: 0.25rem;
+  background-color: var(--color-white);
+}
+
+.checkbox input:checked {
+  border: 2px solid var(--color-primary);
+  background-image: url('../../assets/images/checked-icon.svg');
+  background-color: var(--color-primary);
+  background-repeat: no-repeat;
+  background-position: center;
+}

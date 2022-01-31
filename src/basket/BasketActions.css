@@ -1,0 +1,23 @@
+.basket-actions {
+  @apply flex bg-white rounded-lg;
+  box-shadow: var(--shadow-s) var(--shadow-color-primary);
+}
+
+.product .basket-actions {
+  @apply flex-col absolute -top-2 md:top-0 -right-2 md:right-0;
+}
+
+.basket-content .basket-actions,
+.search-results .basket-actions {
+  flex-direction: row-reverse;
+}
+
+.add-item,
+.remove-item {
+  @apply flex w-8 h-8 justify-center items-center;
+}
+
+.add-item:disabled,
+.remove-item:disabled {
+  @apply cursor-not-allowed;
+}

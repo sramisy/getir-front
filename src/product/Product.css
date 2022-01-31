@@ -1,0 +1,31 @@
+.product {
+  @apply text-center;
+}
+
+.product-image {
+  @apply relative w-24 xl:w-30 mx-auto;
+}
+
+.product-image img {
+  @apply w-24 xl:w-30 border md:border-0 border-primary-light rounded-lg;
+}
+
+.product-info {
+  @apply mt-1;
+}
+
+.old-price {
+  @apply text-sm text-gray-storm line-through mr-2;
+}
+
+.current-price {
+  @apply text-sm font-semibold text-secondary;
+}
+
+.product-title {
+  @apply text-sm font-semibold text-black mt-1;
+}
+
+.product-measure {
+  @apply text-sm text-gray-storm mt-1;
+}

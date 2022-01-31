@@ -1,0 +1,10 @@
+.street-address {
+  max-width: calc(100vw - 180px);
+  @apply text-sm text-gray truncate;
+}
+
+@media screen and (min-width: 768px) {
+  .street-address {
+    max-width: calc(446px - 180px);
+  }
+}

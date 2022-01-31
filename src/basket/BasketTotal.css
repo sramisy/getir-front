@@ -1,0 +1,20 @@
+.basket-total {
+  @apply flex items-center bg-primary-light border-0 rounded-lg;
+}
+
+.basket-total.open {
+  @apply rounded-br-none;
+}
+
+.small-bag {
+  @apply bg-white border-0 rounded-l-lg;
+  padding: 5px;
+}
+
+.total {
+  @apply flex items-center px-3 border-0 self-stretch;
+}
+
+.total span {
+  @apply text-sm text-primary font-semibold;
+}

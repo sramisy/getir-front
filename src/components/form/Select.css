@@ -1,0 +1,43 @@
+.select-container {
+  @apply flex items-center relative border-2 border-input-border rounded-md cursor-pointer;
+}
+
+.select-container.clicked {
+  border: 2px solid var(--color-primary);
+}
+
+.select {
+  @apply flex items-center gap-x-3  px-3 w-max;
+}
+
+.select .option-item {
+  @apply p-0;
+}
+
+.dropdown-arrow {
+  @apply text-primary text-base flex-none;
+  transition: transform 0.3s ease-in-out;
+}
+
+.dropdown-arrow.up {
+  @apply transform rotate-180;
+}
+
+.select figure {
+  width: 22px;
+}
+
+.select-options {
+  @apply absolute border border-input-border w-full rounded-md top-15 bg-white;
+  max-height: 260px;
+  overflow-y: auto;
+  list-style: none;
+}
+
+.option-item {
+  @apply flex-none p-3;
+}
+
+.country-code {
+  @apply text-sm text-gray-storm;
+}

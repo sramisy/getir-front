@@ -1,0 +1,61 @@
+.map {
+  @apply bg-gray-background border-0 rounded-xl;
+  background-color: rgba(93, 62, 188, 0.12);
+  height: calc(100vh - 196px);
+}
+
+.marker {
+  @apply absolute w-full h-full flex flex-col justify-center items-center z-10 pointer-events-none bg-transparent;
+  padding-bottom: 130px;
+}
+
+.marker figure {
+  @apply p-4 bg-white flex justify-center items-center;
+  border-radius: 80px 80px 1.6px;
+  box-shadow: rgb(93 56 192 / 20%) 2px 2px 6px;
+  transform: rotate(45deg);
+}
+
+.marker img {
+  width: 26px;
+  height: 26px;
+  transform: rotate(-45deg);
+}
+
+.address-wrapper {
+  @apply flex items-center bg-white border border-primary rounded-full mb-3;
+  font-size: 13px;
+  padding: 6px 15px;
+  border: 1px solid rgba(93, 56, 192, 0.5);
+  max-width: 80%;
+  box-shadow: rgb(93 56 192 / 20%) 0px 1px 7px;
+}
+
+.marker .address {
+  @apply text-black overflow-ellipsis whitespace-nowrap overflow-hidden;
+  font-size:13px;
+}
+
+.ymaps-2-1-79-map {
+  height: 100% !important;
+  width: 100% !important;
+  border-radius: 0.75rem !important;
+}
+
+.ymaps-2-1-79-inner-panes {
+  @apply rounded-xl;
+}
+
+.mini-map .ymaps-2-1-79-copyright__content {
+  display: none;
+}
+
+.mini-map .ymaps-2-1-79-events-pane {
+  cursor: pointer !important;
+}
+
+@media screen and (min-width: 768px) {
+  .map {
+    height: 420px;
+  }
+}

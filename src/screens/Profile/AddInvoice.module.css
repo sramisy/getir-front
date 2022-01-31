@@ -1,0 +1,7 @@
+.tabs {
+    @apply flex rounded-lg border-2 border-primary;
+}
+
+.tab {
+    @apply w-1/2 py-3 text-sm font-semibold text-primary;
+}
